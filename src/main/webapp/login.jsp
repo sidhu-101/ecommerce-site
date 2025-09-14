@@ -46,7 +46,7 @@
                     ResultSet rs = null;
                     try {
                         Class.forName("com.mysql.cj.jdbc.Driver");
-                        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "230625");
+                        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "sidhu#123");
 
                         String sql = "SELECT id, name, type FROM User WHERE email = ? AND password = ?";
                         stmt = con.prepareStatement(sql);

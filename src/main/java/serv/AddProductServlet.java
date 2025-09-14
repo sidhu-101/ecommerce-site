@@ -52,7 +52,7 @@ public class AddProductServlet extends HttpServlet {
             // Load JDBC Driver (adjust if using another driver)
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/shopygrabe", "root", "230625");
+                "jdbc:mysql://localhost:3306/shopygrabe", "root", "sidhu#123");
             String query = "INSERT INTO products (name, price, category, details, image_path) VALUES (?, ?, ?, ?, ?)";
             PreparedStatement ps = con.prepareStatement(query);
             ps.setString(1, name);

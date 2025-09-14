@@ -26,7 +26,7 @@
 <%
     String url = "jdbc:mysql://localhost:3306/shopygrabe";
     String user = "root";
-    String password = "230625";
+    String password = "sidhu#123";
 
     try {
         Class.forName("com.mysql.cj.jdbc.Driver");

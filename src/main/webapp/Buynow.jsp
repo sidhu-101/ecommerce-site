@@ -21,7 +21,7 @@
         ResultSet rsUser = null, rsAddr = null, rsProduct = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "230625");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "sidhu#123");
 
             String sqlUser = "SELECT phone FROM User WHERE id = ?";
             psUser = conn.prepareStatement(sqlUser);

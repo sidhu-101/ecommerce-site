@@ -53,7 +53,7 @@ public class ConfirmOrderServlet extends HttpServlet {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "230625");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "sidhu#123");
             con.setAutoCommit(false);
 
             // Insert order

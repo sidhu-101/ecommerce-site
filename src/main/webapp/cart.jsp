@@ -60,7 +60,7 @@
 <%
     try {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe","root","230625");
+        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe","root","sidhu#123");
 
         String cartSql = "SELECT c.product_id, c.quantity, p.name, p.price, p.image_path " + 
                          "FROM cart c JOIN products p ON c.product_id = p.id " + 

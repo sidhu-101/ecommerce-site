@@ -47,7 +47,7 @@ public class AddToCartServlet extends HttpServlet {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             try (Connection con = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/shopygrabe", "root", "230625")) {
+                        "jdbc:mysql://localhost:3306/shopygrabe", "root", "sidhu#123")) {
 
                 // Check if product already in cart
                 try (PreparedStatement checkStmt = con.prepareStatement(

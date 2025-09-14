@@ -15,7 +15,7 @@
     
     try {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "230625");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "sidhu#123");
         PreparedStatement ps = con.prepareStatement("SELECT * FROM products WHERE id=?");
         ps.setInt(1, productId);
         ResultSet rs = ps.executeQuery();

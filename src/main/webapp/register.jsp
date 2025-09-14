@@ -52,7 +52,7 @@
                         int userId = 10000000 + (int)(Math.random() * 90000000);
 
                         Class.forName("com.mysql.cj.jdbc.Driver");
-                        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "230625");
+                        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "sidhu#123");
 
                         // Table must have columns: id, name, phone, email, password
                         String sql = "INSERT INTO User (id, name, phone, email, password, type) VALUES (?, ?, ?, ?, ?, ?)";

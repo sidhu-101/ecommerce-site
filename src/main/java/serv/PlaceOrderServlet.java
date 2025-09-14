@@ -41,7 +41,7 @@ public class PlaceOrderServlet extends HttpServlet {
         int productId = Integer.parseInt(productIdStr);
         int quantity = Integer.parseInt(quantityStr);
 
-        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "230625")) {
+        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "sidhu#123")) {
             conn.setAutoCommit(false);
 
             BigDecimal price = BigDecimal.ZERO;

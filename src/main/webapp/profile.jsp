@@ -18,7 +18,7 @@
           int deleteOrderId = Integer.parseInt(deleteOrderIdStr);
 
           Class.forName("com.mysql.cj.jdbc.Driver");
-          try (Connection conDel = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "230625")) {
+          try (Connection conDel = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "sidhu#123")) {
 
               // Delete order items first due to FK constraints
               try (PreparedStatement psDelItems = conDel.prepareStatement("DELETE FROM order_items WHERE order_id = ?")) {
@@ -51,7 +51,7 @@
 
   try {
       Class.forName("com.mysql.cj.jdbc.Driver");
-      con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "230625");
+      con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "sidhu#123");
 
       // Load user details
       ps = con.prepareStatement("SELECT name, email, phone FROM User WHERE id = ?");
@@ -241,7 +241,7 @@
         if(userId != null) {
           try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "230625");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "sidhu#123");
 
             String sql = "SELECT id, name, number, email, address, landmark, city, state, pincode FROM Address WHERE user_id = ?";
             ps = con.prepareStatement(sql);
@@ -293,7 +293,7 @@
       if (userId != null) {
         try {
           Class.forName("com.mysql.cj.jdbc.Driver");
-          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "230625");
+          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "sidhu#123");
           String wishlistSql = "SELECT p.id, p.name, p.price, p.image_path FROM wishlist w JOIN products p ON w.product_id = p.id WHERE w.user_id = ?";
           PreparedStatement wishlistPs = conn.prepareStatement(wishlistSql);
           wishlistPs.setInt(1, userId);
@@ -338,7 +338,7 @@
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connOrders = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "230625");
+            connOrders = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "sidhu#123");
 
             String orderSql = "SELECT id, order_date, status, payment_method, total_amount FROM orders WHERE user_id = ? ORDER BY order_date DESC";
             psOrders = connOrders.prepareStatement(orderSql);

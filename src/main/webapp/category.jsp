@@ -77,7 +77,7 @@
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "230625");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopygrabe", "root", "sidhu#123");
 
             // Use LOWER for case-insensitive match in SQL
             String sql = "SELECT id, name, price, image_path, category FROM products WHERE LOWER(category) = ? ORDER BY name";
